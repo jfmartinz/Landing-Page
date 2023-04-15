@@ -1,14 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,300&display=swap');
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-:root {
-    --dark-background-color: #1F2937;
-    --button-color-cta-color: #3882F6;
-    --text-color: #fff;
-    --section-background: #E5E7EB;
-  }
+body {
+  width: 100%;
+  background-color: #1F2937;
+}
 
-*{
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 0 3%;
+}
+
+ul li {
+  display: inline-block;
+  margin:1rem 0 0 2rem ;
+  
+  list-style: none;
+  
+}
+
+ul li a {
+  text-decoration: none;
+  color: #E5E7EB;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.hero-flex {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  margin-top: 10rem;
+  flex-wrap: wrap;
+  gap: 80px;
+  margin-bottom: 2rem;
+}
+/* styling for logo */
+.container .nav h3 { 
+  color: #F9FAF8;
+  font-size: 24px;
+  letter-spacing: 3px;
+  margin:1rem 0 0 2rem ;
+}
+
+.hero-flex .hero-content h1 {
+  color: #F9FAF8;
+  font-size: 48px;
+}
+
+.hero-flex .hero-content p {
+  color: #E5E7EB;
+  margin: 1rem 0;
+  line-height: 30px;
+}
+
+.hero-flex .hero-content button {
+  color: #F9FAF8;
+  background-color: #3882F6;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 0.5rem 1.75rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hero-flex img {
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #F9FAF8;
+}
+
+.information-container{
+  background-color: #fff;
+  min-height: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.information-content {
+  padding: 2.5rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.information-container h2 {
+  padding: 1.5rem 0;
+}
+
+.information-container .information-content p {
+  margin-top: 0.75rem;
+}
+
+.information-container .information-content img {
+  border-radius: 5px;
 }
